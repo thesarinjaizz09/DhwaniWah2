@@ -17,12 +17,6 @@ const PricingNew = () => {
   const [country, setCountry] = useState<string>("DEFAULT");
 
   useEffect(() => {
-    // const fetchLocation = async () => {
-    //   const location = await getUserLocation();
-    //   setCountry(location.country);
-
-    // };
-
     const fetchLocation = async () => {
       try {
         const response = await fetch("/api/location");
